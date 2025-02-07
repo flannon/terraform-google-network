@@ -18,7 +18,8 @@
 	VPC configuration
  *****************************************/
 resource "google_compute_network" "network" {
-  provider                                  = google-beta
+  #provider                                  = google-beta
+  provider                                  = google
   name                                      = var.network_name
   auto_create_subnetworks                   = var.auto_create_subnetworks
   routing_mode                              = var.routing_mode
